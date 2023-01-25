@@ -9,10 +9,10 @@ buffer.
 
 ## Sample (pseudo code)
 
-while (true) {
-    if (buffer_lenght() < 9) continue;
+    while (true) {
+        if (buffer_lenght() < 9) continue;
 
-    long data = sensor_parse_uart_buffer(buffer_get_pointer());
+        long data = sensor_parse_uart_buffer(buffer_get_pointer());
 
-    buffer_flush();
-}
+        buffer_flush();
+    }
