@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SOURCE=../sources/sensor.c
-TARGET=../build-linux-gcc/ZPH01lib.a
+TARGET=../build-linux-gcc/libZPH01.a
 OBJECT=../build-linux-gcc/ZPH01lib.o
 
 gcc -O2 $SOURCE -c -o $OBJECT
