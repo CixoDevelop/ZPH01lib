@@ -12,8 +12,8 @@
  * @*buffer Buffer to parse
  * @size Buffer size, function 
  */
-long sensor_parse_uart_buffer(char *buffer, uint8_t size) {
-    while (*(buffer++) != 0xFF) if (--size < 8) return 0x00;
+long sensor_parse_uart_buffer(unsigned char *buffer, uint8_t size) {
+    while (*(buffer++) != 0xFF)  if (--size < 8) return 0x00;
 
     if (*(buffer++) != 0x18) return 0x00;
     if (*(buffer++) != 0x00) return 0x00;

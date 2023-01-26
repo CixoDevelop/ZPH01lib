@@ -25,7 +25,7 @@
  * @*buffer Buffer to parse
  * @size Buffer size, function 
  */
-long sensor_parse_uart_buffer(char *buffer, uint8_t size);
+long sensor_parse_uart_buffer(unsigned char *buffer, uint8_t size);
  
 /** \fn sensor_get_pulse_rate
  * This get pulse rate in procents from decimal and integer part of
